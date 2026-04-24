@@ -170,31 +170,62 @@ struct SearchView: View {
     // MARK: - Results
 
     private var resultsList: some View {
-        List(results) { result in
-            Button {
-                if let url = URL(string: result.url) {
-                    UIApplication.shared.open(url)
-                }
-            } label: {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(result.displayURL)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                    Text(result.title)
-                        .font(.headline)
-                        .foregroundStyle(Color.accentColor)
-                        .lineLimit(2)
-                    if let desc = result.description {
-                        Text(desc)
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                            .lineLimit(3)
+        ScrollView {
+            LazyVStack(spacing: 12) {
+                ForEach(results) { result in
+                    Button {
+                        if let url = URL(string: result.url) {
+                            UIApplication.shared.open(url)
+                        }
+                    } label: {
+                        VStack(alignment: .leading, spacing: 8) {
+                            // Site info row
+                            HStack(spacing: 8) {
+                                AsyncImage(url: result.faviconURL) { image in
+                                    image.resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                } placeholder: {
+                                    Image(systemName: "globe")
+                                        .foregroundStyle(.secondary)
+                                }
+                                .frame(width: 16, height: 16)
+                                .clipShape(RoundedRectangle(cornerRadius: 3))
+
+                                Text(result.displayURL)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(1)
+
+                                Spacer()
+                            }
+
+                            // Title
+                            Text(result.title)
+                                .font(.system(size: 16, weight: .semibold))
+                                .foregroundStyle(.orange)
+                                .lineLimit(2)
+                                .multilineTextAlignment(.leading)
+
+                            // Description
+                            if let desc = result.description {
+                                Text(desc)
+                                    .font(.system(size: 14))
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(3)
+                                    .multilineTextAlignment(.leading)
+                            }
+                        }
+                        .padding(14)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Color(.secondarySystemGroupedBackground))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
+                    .buttonStyle(.plain)
                 }
-                .padding(.vertical, 4)
             }
+            .padding(.horizontal)
+            .padding(.top, 4)
         }
-        .listStyle(.plain)
     }
 
     // MARK: - Empty State

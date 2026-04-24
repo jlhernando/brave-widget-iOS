@@ -72,7 +72,12 @@ struct WebResult: Codable, Identifiable {
     var id: String { url }
 
     var displayURL: String {
-        URL(string: url)?.host ?? url
+        URL(string: url)?.host?.replacingOccurrences(of: "www.", with: "") ?? url
+    }
+
+    var faviconURL: URL? {
+        guard let host = URL(string: url)?.host else { return nil }
+        return URL(string: "https://icons.duckduckgo.com/ip3/\(host).ico")
     }
 }
 
