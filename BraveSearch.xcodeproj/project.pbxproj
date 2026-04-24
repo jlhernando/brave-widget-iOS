@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D8B5A951095F7F2F9828DD3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464533C7BD670D6F4A0764A7 /* SettingsView.swift */; };
+		216F1604700E1759E7B77F38 /* BraveSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C105163EFF7AC3BBAAF01 /* BraveSearchAPI.swift */; };
+		276AAB5D7DB9AF7D631C6528 /* BraveSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05C7D2C9691684357DB47B0 /* BraveSearchApp.swift */; };
+		2B1D2CF83C5DD24FB1577732 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1071B77B0655153C98EBB61E /* SearchView.swift */; };
+		54BB7FB75A116042243891C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52E52C08DE657F4B3CDF841 /* Foundation.framework */; };
+		678B38B199AA733503461F8E /* BraveSearchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4ED6BC12ADA9523669013 /* BraveSearchWidget.swift */; };
+		86DFEE83C4019750B31556A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52E52C08DE657F4B3CDF841 /* Foundation.framework */; };
+		8BA867F0085DCB23F00EF08B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60D6E7BE83674C66F235069 /* SwiftUI.framework */; };
+		97420738049E2A1F3C074FDC /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7E3AA88B42CC470F0643B /* KeychainHelper.swift */; };
+		ACE72D38C2066C185767941E /* URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939035A7536E33A723F1A97 /* URLScheme.swift */; };
+		B5C005A84871800CB7CEAA87 /* URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939035A7536E33A723F1A97 /* URLScheme.swift */; };
+		BC8539636E1F4709B678854F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7E3AA88B42CC470F0643B /* KeychainHelper.swift */; };
+		D165479DF76EFE12E9299D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C26AE136756FDE605DB00F3 /* Assets.xcassets */; };
+		D419CA034A11888D27FEFA38 /* BraveSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C105163EFF7AC3BBAAF01 /* BraveSearchAPI.swift */; };
+		E0329891AB42AE79ABD550F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048F65A4A294AEDB7EA450A2 /* Assets.xcassets */; };
+		E2D8D21099E94B0C57C57C0B /* BraveSearchWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 90E96AECAAAE4CD03678DC35 /* BraveSearchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED0DC7E8026F263FE4D04FAF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C4DBF29030CF7D30993B14 /* WidgetKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6653E89C3640A0FB57BD7E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D456AB0E1E7BCF5173149A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F0553E695FE8E6E05514402;
+			remoteInfo = BraveSearchWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2AEE01C6C6E4CB8466641E52 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E2D8D21099E94B0C57C57C0B /* BraveSearchWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		048F65A4A294AEDB7EA450A2 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1071B77B0655153C98EBB61E /* SearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1C26AE136756FDE605DB00F3 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E6B3030D843F449157EA908 /* BraveSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		464533C7BD670D6F4A0764A7 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		62F7E3AA88B42CC470F0643B /* KeychainHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		78C4DBF29030CF7D30993B14 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WidgetKit.framework; sourceTree = SDKROOT; };
+		79C4ED6BC12ADA9523669013 /* BraveSearchWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BraveSearchWidget.swift; sourceTree = "<group>"; };
+		7B3A908CED74C602C59E704E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E96AECAAAE4CD03678DC35 /* BraveSearchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BraveSearchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A939035A7536E33A723F1A97 /* URLScheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLScheme.swift; sourceTree = "<group>"; };
+		B52E52C08DE657F4B3CDF841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C98C105163EFF7AC3BBAAF01 /* BraveSearchAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BraveSearchAPI.swift; sourceTree = "<group>"; };
+		E05C7D2C9691684357DB47B0 /* BraveSearchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BraveSearchApp.swift; sourceTree = "<group>"; };
+		F60D6E7BE83674C66F235069 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		513890A3538F2FF06DB83E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DFEE83C4019750B31556A4 /* Foundation.framework in Frameworks */,
+				ED0DC7E8026F263FE4D04FAF /* WidgetKit.framework in Frameworks */,
+				8BA867F0085DCB23F00EF08B /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50E5B962BD55F6F9D7687A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BB7FB75A116042243891C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D701E79955A384948CD96F4 /* BraveSearch */ = {
+			isa = PBXGroup;
+			children = (
+				E05C7D2C9691684357DB47B0 /* BraveSearchApp.swift */,
+				1071B77B0655153C98EBB61E /* SearchView.swift */,
+				464533C7BD670D6F4A0764A7 /* SettingsView.swift */,
+				048F65A4A294AEDB7EA450A2 /* Assets.xcassets */,
+				7B3A908CED74C602C59E704E /* Info.plist */,
+			);
+			name = BraveSearch;
+			path = BraveSearch;
+			sourceTree = "<group>";
+		};
+		54491850D868BEC882A628F9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A939035A7536E33A723F1A97 /* URLScheme.swift */,
+				C98C105163EFF7AC3BBAAF01 /* BraveSearchAPI.swift */,
+				62F7E3AA88B42CC470F0643B /* KeychainHelper.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5CFE44330B63AFB6D0B83E3A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B52E52C08DE657F4B3CDF841 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6290BDA3118374E71D180BB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E6B3030D843F449157EA908 /* BraveSearch.app */,
+				90E96AECAAAE4CD03678DC35 /* BraveSearchWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A4A4F1D2514F66BACAE7E00 /* BraveSearchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				79C4ED6BC12ADA9523669013 /* BraveSearchWidget.swift */,
+				1C26AE136756FDE605DB00F3 /* Assets.xcassets */,
+			);
+			name = BraveSearchWidget;
+			path = BraveSearchWidget;
+			sourceTree = "<group>";
+		};
+		75420D2E0C9C731D4896402F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CFE44330B63AFB6D0B83E3A /* iOS */,
+				78C4DBF29030CF7D30993B14 /* WidgetKit.framework */,
+				F60D6E7BE83674C66F235069 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9001D6C4E047AB76EE3F2DBF = {
+			isa = PBXGroup;
+			children = (
+				6290BDA3118374E71D180BB8 /* Products */,
+				75420D2E0C9C731D4896402F /* Frameworks */,
+				54491850D868BEC882A628F9 /* Shared */,
+				2D701E79955A384948CD96F4 /* BraveSearch */,
+				6A4A4F1D2514F66BACAE7E00 /* BraveSearchWidget */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F0553E695FE8E6E05514402 /* BraveSearchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E3D6B7025D8B789DAC22A3 /* Build configuration list for PBXNativeTarget "BraveSearchWidgetExtension" */;
+			buildPhases = (
+				2372C522A814C5367AB400DC /* Sources */,
+				513890A3538F2FF06DB83E39 /* Frameworks */,
+				CCB0034E095218D90BED0699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BraveSearchWidgetExtension;
+			productName = BraveSearchWidgetExtension;
+			productReference = 90E96AECAAAE4CD03678DC35 /* BraveSearchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D0E6826867AA368E9B16A056 /* BraveSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A78CF40CF99E0969820EFF39 /* Build configuration list for PBXNativeTarget "BraveSearch" */;
+			buildPhases = (
+				BBD4CD3A549EE75B64D9F59B /* Sources */,
+				B50E5B962BD55F6F9D7687A5 /* Frameworks */,
+				57948BAE1526A5F9B79E57DC /* Resources */,
+				2AEE01C6C6E4CB8466641E52 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BF32A35323C99C91D5C2508 /* PBXTargetDependency */,
+			);
+			name = BraveSearch;
+			productName = BraveSearch;
+			productReference = 1E6B3030D843F449157EA908 /* BraveSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D456AB0E1E7BCF5173149A64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 0E7F4B85F173D24EAE5C83F8 /* Build configuration list for PBXProject "BraveSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9001D6C4E047AB76EE3F2DBF;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6290BDA3118374E71D180BB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E6826867AA368E9B16A056 /* BraveSearch */,
+				9F0553E695FE8E6E05514402 /* BraveSearchWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57948BAE1526A5F9B79E57DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0329891AB42AE79ABD550F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB0034E095218D90BED0699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D165479DF76EFE12E9299D20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2372C522A814C5367AB400DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678B38B199AA733503461F8E /* BraveSearchWidget.swift in Sources */,
+				B5C005A84871800CB7CEAA87 /* URLScheme.swift in Sources */,
+				216F1604700E1759E7B77F38 /* BraveSearchAPI.swift in Sources */,
+				BC8539636E1F4709B678854F /* KeychainHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD4CD3A549EE75B64D9F59B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276AAB5D7DB9AF7D631C6528 /* BraveSearchApp.swift in Sources */,
+				2B1D2CF83C5DD24FB1577732 /* SearchView.swift in Sources */,
+				1D8B5A951095F7F2F9828DD3 /* SettingsView.swift in Sources */,
+				ACE72D38C2066C185767941E /* URLScheme.swift in Sources */,
+				D419CA034A11888D27FEFA38 /* BraveSearchAPI.swift in Sources */,
+				97420738049E2A1F3C074FDC /* KeychainHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BF32A35323C99C91D5C2508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BraveSearchWidgetExtension;
+			target = 9F0553E695FE8E6E05514402 /* BraveSearchWidgetExtension */;
+			targetProxy = 6653E89C3640A0FB57BD7E1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20C8DA49B565622D369326B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4A9E548DEEF31A75EB31861B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = BraveSearchWidget/BraveSearchWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveSearchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PrivateSearch Widget";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bravesearch.widget.searchwidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A6D61FEEC2D6E9635F34FDD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = BraveSearch/BraveSearch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveSearch/Info.plist;
+				INFOPLIST_KEY_CFBundleURLTypes = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bravesearch.widget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D54E33492B184E1CDD26090C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DE418F181CBE85CBBCD1F35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = BraveSearch/BraveSearch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveSearch/Info.plist;
+				INFOPLIST_KEY_CFBundleURLTypes = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bravesearch.widget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5438A05AE778D2E20F26EF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = BraveSearchWidget/BraveSearchWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveSearchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PrivateSearch Widget";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bravesearch.widget.searchwidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E7F4B85F173D24EAE5C83F8 /* Build configuration list for PBXProject "BraveSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20C8DA49B565622D369326B1 /* Debug */,
+				D54E33492B184E1CDD26090C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E3D6B7025D8B789DAC22A3 /* Build configuration list for PBXNativeTarget "BraveSearchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5438A05AE778D2E20F26EF0 /* Release */,
+				4A9E548DEEF31A75EB31861B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A78CF40CF99E0969820EFF39 /* Build configuration list for PBXNativeTarget "BraveSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE418F181CBE85CBBCD1F35C /* Release */,
+				A6D61FEEC2D6E9635F34FDD4 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D456AB0E1E7BCF5173149A64 /* Project object */;
+}
